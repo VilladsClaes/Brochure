@@ -74,3 +74,23 @@ med de rigtige inden en rigtig udgivelse.
 `npm run build` lægger et komplet statisk site i `dist/`. Det kan lægges på enhver
 statisk host, CDN eller Cloudflare Workers/Pages – der er ingen serverkode, men
 formularerne åbner brugerens e-mailklient, da der ikke er et backend.
+
+### Automatisk udgivelse til www.foretagsomheden.dk
+
+Hvert push til `main` bygger sitet og uploader `dist/` til webhotellet hos
+Simply.com via FTPS (`.github/workflows/deploy.yml`). Workflowet kan også startes
+manuelt under **Actions → Udgiv til foretagsomheden.dk → Run workflow**.
+
+Det kræver tre repository secrets (Settings → Secrets and variables → Actions):
+
+| Secret         | Værdi                                              |
+| -------------- | -------------------------------------------------- |
+| `FTP_SERVER`   | FTP-serveren fra Simply.com-kontrolpanelet         |
+| `FTP_USERNAME` | FTP-brugernavn                                     |
+| `FTP_PASSWORD` | FTP-adgangskode                                    |
+
+Filerne lægges i `public_html/`. Hvis webroden hedder noget andet, så opret en
+repository-variabel `FTP_SERVER_DIR` (fx `wwwroot/`, med afsluttende `/`).
+
+`public/web.config` sætter IIS op med `index.html` som startside og `404.html`
+som fejlside.
