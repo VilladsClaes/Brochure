@@ -1,0 +1,54 @@
+<!-- @include "src/partials/head.html" { "title": "Kontakt", "description": "Kontakt Eventur – skriv til hej@eventur.dk eller send en besked. Vi holder til i Midtjylland og svarer inden for et par dage.", "section": "kontakt" } -->
+<!-- @include "src/partials/nav.html" -->
+
+<!-- @include "src/partials/page-hero.html" { "title": "Kontakt os", "crumb": "Kontakt", "image": "/assets/images/bg_5.jpg" } -->
+
+        <section class="ftco-section contact-section">
+            <div class="container">
+                <div class="row d-flex mb-5 contact-info">
+                    <div class="col-md-12 mb-4">
+                        <h2 class="h4">Her finder du os</h2>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-md-4">
+                        <p><span>Adresse:</span> Eventur, Skovvej 1, 8600 Silkeborg</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><span>Telefon:</span> <a href="tel://+4512345678">+45 12 34 56 78</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><span>E-mail:</span> <a href="mailto:hej@eventur.dk">hej@eventur.dk</a></p>
+                    </div>
+                </div>
+                <div class="row block-9">
+                    <div class="col-md-6 pr-md-5">
+                        <h2 class="h4 mb-4">Send en besked</h2>
+                        <form data-mailto-form="hej@eventur.dk" data-subject="Besked fra eventur.dk" novalidate>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="Navn" placeholder="Dit navn" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="E-mail" placeholder="Din e-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="Emne" placeholder="Emne">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="Besked" cols="30" rows="7" placeholder="Besked"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Send besked" class="btn btn-primary py-3 px-5">
+                            </div>
+                            <p class="form-status" role="status" aria-live="polite"></p>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="map-embed">
+                            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=9.5010%2C56.1480%2C9.6020%2C56.1910&amp;layer=mapnik&amp;marker=56.1697%2C9.5519" title="Kort over Eventur i Silkeborg" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- @include "src/partials/footer.html" -->

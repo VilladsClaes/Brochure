@@ -1,0 +1,15 @@
+{
+  "name": "eventur",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Eventur – event og ture i naturen. Statisk brochureside.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}

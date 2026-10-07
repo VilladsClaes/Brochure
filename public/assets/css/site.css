@@ -1,0 +1,106 @@
+/*!
+ * Eventur – projektspecifikke tilføjelser oven på temaets style.css.
+ * Holdes bevidst lille og additivt, så temaets design bevares.
+ */
+
+/* Vis indhold, hvis JavaScript er slået fra */
+.no-js .ftco-animate {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Tilgængelighed: spring direkte til indholdet */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 1000;
+    padding: 12px 20px;
+    background: #404044;
+    color: #fff;
+    border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+    left: 0;
+    color: #fff;
+}
+
+/* Aktivt menupunkt i overlay-menuen */
+#colorlib-main-nav ul li.active > a span {
+    border-bottom: 2px solid #fff;
+}
+
+/* Indlejret kort (OpenStreetMap) uden API-nøgle */
+.map-embed {
+    position: relative;
+    width: 100%;
+    min-height: 380px;
+    height: 100%;
+    border: 0;
+    overflow: hidden;
+}
+
+.map-embed iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    border: 0;
+    display: block;
+}
+
+/* Responsivt videofelt */
+.video-embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Formularstatus efter indsendelse */
+.form-status {
+    display: none;
+    margin-top: 1rem;
+    padding: .75rem 1rem;
+    border-radius: 4px;
+    background: #e8f9f0;
+    color: #1c6b45;
+}
+
+.form-status.is-visible {
+    display: block;
+}
+
+/* Blogartikel: læsbar typografi */
+.entry-content h2 {
+    margin-top: 2rem;
+    font-size: 30px;
+}
+
+.entry-content h3 {
+    margin-top: 1.5rem;
+    font-size: 22px;
+}
+
+.entry-content p {
+    margin-bottom: 1.25rem;
+}
+
+.entry-content blockquote {
+    padding-left: 1.25rem;
+    border-left: 3px solid #79efb4;
+    font-style: italic;
+}
+
+.entry-content ul {
+    margin-bottom: 1.25rem;
+}
