@@ -1,54 +1,53 @@
-<!-- @include "src/partials/head.html" { "title": "Kontakt", "description": "Kontakt Eventur – skriv til hej@eventur.dk eller send en besked. Vi holder til i Midtjylland og svarer inden for et par dage.", "section": "kontakt" } -->
-<!-- @include "src/partials/nav.html" -->
+<!-- @include "src/partials/head.html" { "title": "Kontakt", "description": "Kontakt eventur – skriv, ring eller kom forbi. Vi svarer gerne på spørgsmål om ture, telthængekøjer, natteløb, luftgevær og bow combat.", "section": "kontakt" } -->
+<!-- @include "src/partials/header.html" -->
 
-<!-- @include "src/partials/page-hero.html" { "title": "Kontakt os", "crumb": "Kontakt", "image": "/assets/images/bg_5.jpg" } -->
+<!-- @include "src/partials/page-hero.html" { "title": "Sig hej", "crumb": "Kontakt", "lead": "Spørgsmål, idéer eller lyst til at tage med? Skriv til os – vi svarer, så snart vi er tilbage fra skoven.", "image": "/assets/img/arkiv/byggeland-port.jpg" } -->
 
-        <section class="ftco-section contact-section">
-            <div class="container">
-                <div class="row d-flex mb-5 contact-info">
-                    <div class="col-md-12 mb-4">
-                        <h2 class="h4">Her finder du os</h2>
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="col-md-4">
-                        <p><span>Adresse:</span> Eventur, Skovvej 1, 8600 Silkeborg</p>
-                    </div>
-                    <div class="col-md-4">
-                        <p><span>Telefon:</span> <a href="tel://+4512345678">+45 12 34 56 78</a></p>
-                    </div>
-                    <div class="col-md-4">
-                        <p><span>E-mail:</span> <a href="mailto:hej@eventur.dk">hej@eventur.dk</a></p>
-                    </div>
+        <section class="sektion">
+            <div class="wrap to-kol to-kol--top">
+                <div class="afsloer">
+                    <p class="overtitel">Her finder du os</p>
+                    <h2>Lejrbålet er altid tændt</h2>
+                    <ul class="kontaktliste">
+                        <li>
+                            <span class="kort__ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></span>
+                            <div><strong>E-mail</strong><a href="mailto:hej@eventur.dk">hej@eventur.dk</a></div>
+                        </li>
+                        <li>
+                            <span class="kort__ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-3 2a11 11 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg></span>
+                            <div><strong>Telefon</strong><a href="tel:+4512345678">+45 12 34 56 78</a></div>
+                        </li>
+                        <li>
+                            <span class="kort__ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-12a7 7 0 0114 0c0 6-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+                            <div><strong>Adresse</strong>eventur, Skovvej 1, 8600 Silkeborg<br><span class="lille">Turene foregår i skov og ved sø – vi sender kort og kørselsvejledning ved booking.</span></div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="row block-9">
-                    <div class="col-md-6 pr-md-5">
-                        <h2 class="h4 mb-4">Send en besked</h2>
-                        <form data-mailto-form="hej@eventur.dk" data-subject="Besked fra eventur.dk" novalidate>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="Navn" placeholder="Dit navn" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" name="E-mail" placeholder="Din e-mail" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="Emne" placeholder="Emne">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" name="Besked" cols="30" rows="7" placeholder="Besked"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" value="Send besked" class="btn btn-primary py-3 px-5">
-                            </div>
-                            <p class="form-status" role="status" aria-live="polite"></p>
-                        </form>
+                <form class="formular kort afsloer" style="--forsink:.1s" data-mailto-form="hej@eventur.dk" data-subject="Besked fra eventur.dk" novalidate>
+                    <h3 class="felt--hel" style="margin:0">Send en besked</h3>
+                    <div class="felt">
+                        <label for="k-navn">Navn</label>
+                        <input type="text" id="k-navn" name="Navn" autocomplete="name" required>
                     </div>
-                    <div class="col-md-6">
-                        <div class="map-embed">
-                            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=9.5010%2C56.1480%2C9.6020%2C56.1910&amp;layer=mapnik&amp;marker=56.1697%2C9.5519" title="Kort over Eventur i Silkeborg" loading="lazy"></iframe>
-                        </div>
+                    <div class="felt">
+                        <label for="k-email">E-mail</label>
+                        <input type="email" id="k-email" name="E-mail" autocomplete="email" required>
                     </div>
-                </div>
+                    <div class="felt felt--hel">
+                        <label for="k-emne">Emne</label>
+                        <input type="text" id="k-emne" name="Emne">
+                    </div>
+                    <div class="felt felt--hel">
+                        <label for="k-besked">Besked</label>
+                        <textarea id="k-besked" name="Besked" rows="6" required></textarea>
+                    </div>
+                    <div class="felt felt--hel">
+                        <button class="knap" type="submit">Send besked</button>
+                    </div>
+                    <p class="formular__status" role="status" aria-live="polite"></p>
+                </form>
             </div>
         </section>
 
+<!-- @include "src/partials/cta.html" -->
 <!-- @include "src/partials/footer.html" -->

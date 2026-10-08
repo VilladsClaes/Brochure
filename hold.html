@@ -1,83 +1,91 @@
-<!-- @include "src/partials/head.html" { "title": "Hold og priser", "description": "Priser på Eventurs ture: medlem DKK 100, ny deltager DKK 225 og holdtur DKK 1119. Se programmet og tilmeld dit hold.", "section": "hold" } -->
-<!-- @include "src/partials/nav.html" -->
+<!-- @include "src/partials/head.html" { "title": "Priser og booking", "description": "Priser på eventurs ture: gammel kending DKK 100, ny eventyrer DKK 225 og holdtur DKK 1119. Tilmeld jeres hold til telthængekøjer, natteløb, luftgevær og bow combat.", "section": "hold" } -->
+<!-- @include "src/partials/header.html" -->
 
-<!-- @include "src/partials/page-hero.html" { "title": "Hold &amp; priser", "crumb": "Hold &amp; priser", "image": "/assets/images/bg_4.jpg" } -->
+<!-- @include "src/partials/page-hero.html" { "title": "Priser &amp; booking", "crumb": "Book en tur", "lead": "Simple priser, alt udstyr inkluderet. Fortæl os om jeres gruppe, så finder vi en dato.", "image": "/assets/img/arkiv/telte-skov.jpg" } -->
 
-<!-- @include "src/partials/section-priser.html" -->
-<!-- @include "src/partials/section-program.html" -->
-
-        <section class="ftco-section bg-light" id="tilmelding">
-            <div class="container bg-light">
-                <div class="row justify-content-center mb-5">
-                    <div class="col-md-8 text-center heading-section ftco-animate">
-                        <h2>Tilmeld dit hold</h2>
-                        <p>Fortæl os lidt om jeres gruppe, så vender vi tilbage med et oplæg og et par ledige datoer. Felterne åbner din e-mailklient med oplysningerne, når du trykker send.</p>
-                    </div>
+        <section class="sektion sektion--pergament korn">
+            <div class="wrap">
+                <div class="hoved hoved--center afsloer">
+                    <p class="overtitel">Priser</p>
+                    <h2>Hvad koster et eventyr?</h2>
+                    <p class="ingress" style="margin:0 auto">Prisen dækker instruktion, udstyr, bålmad og et sted at sove. Sovepose og godt humør tager I selv med.</p>
                 </div>
-                <div class="row block-9 justify-content-center">
-                    <div class="col-md-8">
-                        <form data-mailto-form="hej@eventur.dk" data-subject="Tilmelding af hold" novalidate>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="navn">Navn</label>
-                                        <input type="text" class="form-control" id="navn" name="Navn" placeholder="Dit navn" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="email">E-mail</label>
-                                        <input type="email" class="form-control" id="email" name="E-mail" placeholder="dig@eksempel.dk" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="telefon">Telefon</label>
-                                        <input type="tel" class="form-control" id="telefon" name="Telefon" placeholder="+45 12 34 56 78">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="antal">Antal deltagere</label>
-                                        <input type="number" min="1" class="form-control" id="antal" name="Antal deltagere" value="5">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="dato">Ønsket dato</label>
-                                        <input type="date" class="form-control" id="dato" name="Ønsket dato">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="tur">Tur</label>
-                                        <select class="form-control" id="tur" name="Tur">
-                                            <option>Shelter og rødvin</option>
-                                            <option>Hængekøje og hjemmelavet øl</option>
-                                            <option>Økser, hulebyg, bål og mjød</option>
-                                            <option>Ved ikke endnu – kom med et forslag</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="besked">Besked</label>
-                                        <textarea class="form-control" id="besked" name="Besked" rows="5" placeholder="Fortæl os om jeres gruppe og jeres ønsker"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="submit" value="Send tilmelding" class="btn btn-primary py-3 px-5">
-                                    </div>
-                                    <p class="form-status" role="status" aria-live="polite"></p>
-                                    <p class="small text-muted">Vil du hellere skrive direkte? Send en mail til <a href="mailto:hej@eventur.dk">hej@eventur.dk</a>.</p>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                <div class="priser">
+                    <article class="pris afsloer">
+                        <h3>Gammel kending</h3>
+                        <p>Har du været med i Foretagsomheden eller på en eventur før? Så betaler du kun et symbolsk beløb – du ved jo, hvordan det foregår.</p>
+                        <div class="pris__belob"><small>DKK</small>100</div>
+                        <div class="pris__enhed">per person for hele turen</div>
+                        <a class="knap knap--moerk" href="#tilmelding">Tilmeld dig</a>
+                    </article>
+                    <article class="pris pris--fremhaevet afsloer" style="--forsink:.1s">
+                        <span class="pris__maerke">mest populær</span>
+                        <h3>Ny eventyrer</h3>
+                        <p>Første gang ude med os? Så får du det hele: introduktion, alle eventyr og det lille velkomstritual ved bålet.</p>
+                        <div class="pris__belob"><small>DKK</small>225</div>
+                        <div class="pris__enhed">per person for hele turen</div>
+                        <a class="knap" href="#tilmelding">Tilmeld dig</a>
+                    </article>
+                    <article class="pris afsloer" style="--forsink:.2s">
+                        <h3>Holdtur</h3>
+                        <p>En vennegruppe, en familie eller en arbejdsplads? I får turen for jer selv, og vi springer ryste-sammen-ritualet over. Minimum 5 personer.</p>
+                        <div class="pris__belob"><small>DKK</small>1119</div>
+                        <div class="pris__enhed">for hele holdet</div>
+                        <a class="knap knap--moerk" href="#tilmelding">Book holdtur</a>
+                    </article>
                 </div>
             </div>
         </section>
 
-<!-- @include "src/partials/section-cta.html" -->
+        <section class="sektion" id="tilmelding">
+            <div class="wrap to-kol to-kol--top">
+                <div class="afsloer">
+                    <p class="overtitel">Tilmelding</p>
+                    <h2>Fortæl os om jeres hold</h2>
+                    <p class="ingress">Vi vender tilbage med et oplæg og et par ledige datoer. Når du trykker send, åbner din mailklient med oplysningerne klar.</p>
+                    <figure class="polaroid tape" style="--rot:-3deg;max-width:340px;margin-top:2.5rem"><img src="/assets/img/arkiv/baal.jpg" alt="En deltager varmer hænderne ved et stort bål" loading="lazy"><figcaption>vi ses ved bålet!</figcaption></figure>
+                </div>
+                <form class="formular kort afsloer" style="--forsink:.1s" data-mailto-form="hej@eventur.dk" data-subject="Tilmelding af hold" novalidate>
+                    <div class="felt">
+                        <label for="navn">Navn</label>
+                        <input type="text" id="navn" name="Navn" autocomplete="name" required>
+                    </div>
+                    <div class="felt">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="E-mail" autocomplete="email" required>
+                    </div>
+                    <div class="felt">
+                        <label for="telefon">Telefon</label>
+                        <input type="tel" id="telefon" name="Telefon" autocomplete="tel">
+                    </div>
+                    <div class="felt">
+                        <label for="antal">Antal deltagere</label>
+                        <input type="number" min="1" id="antal" name="Antal deltagere" value="5">
+                    </div>
+                    <div class="felt">
+                        <label for="dato">Ønsket dato</label>
+                        <input type="date" id="dato" name="Ønsket dato">
+                    </div>
+                    <div class="felt">
+                        <label for="tur">Tur</label>
+                        <select id="tur" name="Tur">
+                            <option>Nattetur (kl. 16 – 10)</option>
+                            <option>Eftermiddagseventyr</option>
+                            <option>Weekendekspedition</option>
+                            <option>Ved ikke endnu – kom med et forslag</option>
+                        </select>
+                    </div>
+                    <div class="felt felt--hel">
+                        <label for="besked">Hvad drømmer I om?</label>
+                        <textarea id="besked" name="Besked" rows="5" placeholder="Fx: bow combat er et must, og vi har to børn på 9 med"></textarea>
+                    </div>
+                    <div class="felt felt--hel">
+                        <button class="knap" type="submit">Send tilmelding <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+                    </div>
+                    <p class="formular__status" role="status" aria-live="polite"></p>
+                    <p class="lille felt--hel" style="margin:0">Vil du hellere skrive direkte? Send en mail til <a href="mailto:hej@eventur.dk">hej@eventur.dk</a>.</p>
+                </form>
+            </div>
+        </section>
+
 <!-- @include "src/partials/footer.html" -->

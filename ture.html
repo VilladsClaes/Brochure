@@ -1,75 +1,153 @@
-<!-- @include "src/partials/head.html" { "title": "Ture og oplevelser", "description": "Se Eventurs ture: shelter og rødvin, hængekøje og hjemmelavet øl, økser, hulebyg, bål og mjød samt heldags- og natteture.", "section": "ture" } -->
-<!-- @include "src/partials/nav.html" -->
+<!-- @include "src/partials/head.html" { "title": "Aktiviteter og ture", "description": "Telthængekøjer, natteløb, luftgevær og bow combat. Se eventurs aktiviteter, turformater, pakkeliste og hvordan vi passer på hinanden.", "section": "ture" } -->
+<!-- @include "src/partials/header.html" -->
 
-<!-- @include "src/partials/page-hero.html" { "title": "Ture &amp; oplevelser", "crumb": "Ture", "image": "/assets/images/bg_1.jpg" } -->
+<!-- @include "src/partials/page-hero.html" { "title": "Fire eventyr – og en masse bål imellem", "crumb": "Aktiviteter", "lead": "Vælg ét eventyr til en eftermiddag, eller flet dem alle sammen til et døgn i skoven. Vi står for udstyr, instruktion og bål.", "image": "/assets/img/arkiv/haengekoejer-tarp.jpg" } -->
 
-        <section class="ftco-section">
-            <div class="container">
-                <div class="row justify-content-center mb-5 pb-5">
-                    <div class="col-md-8 text-center heading-section ftco-animate">
-                        <h2>Ture vi laver igen og igen</h2>
-                        <p>Alle ture kan skaleres fra en eftermiddag til et helt døgn og tilpasses, så de passer til netop jeres gruppe. Fortæl os, hvor mange I er, og hvad I gerne vil prøve.</p>
+        <section class="sektion">
+            <div class="wrap">
+                <article class="detalje" id="haengekoejer">
+                    <div class="detalje__billede afsloer">
+                        <img src="/assets/img/arkiv/haengekoejer-skov.jpg" alt="Telthængekøjer med tarp hænger mellem granerne" loading="lazy">
+                        <figure class="polaroid tape"><img src="/assets/img/arkiv/haengekoejer-sol.jpg" alt="To deltagere slapper af i hængekøjer" loading="lazy"><figcaption>middagslur</figcaption></figure>
                     </div>
+                    <div class="afsloer" style="--forsink:.1s">
+                        <span class="detalje__nr">eventyr nr. 1</span>
+                        <h2>Telthængekøjer</h2>
+                        <p class="ingress">En telthængekøje er hængekøje, myggenet og tag i ét. Man sover svævende, tørt og overraskende godt – og vågner med skoven helt tæt på.</p>
+                        <ul class="tjek">
+                            <li>Vi lærer at vælge de rigtige træer og skåne barken med brede stropper</li>
+                            <li>Knob og opspænding: tarp, ridgeline og det perfekte sving</li>
+                            <li>Sådan holder du varmen – underlag, sovepose og tricks fra de gamle</li>
+                            <li>Hængekøjer, tarps og stropper har vi med til alle</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="detalje" id="natteloeb">
+                    <div class="detalje__billede afsloer">
+                        <img src="/assets/img/arkiv/nat-taarn.jpg" alt="Udkigstårn i silhuet mod nattehimlen" loading="lazy">
+                        <figure class="polaroid tape"><img src="/assets/img/arkiv/nat-baal.jpg" alt="Bål lyser op i trætoppene" loading="lazy"><figcaption>målet: bålet</figcaption></figure>
+                    </div>
+                    <div class="afsloer" style="--forsink:.1s">
+                        <span class="detalje__nr">eventyr nr. 2</span>
+                        <h2>Natteløb</h2>
+                        <p class="ingress">Når mørket har lagt sig, sender vi holdene ud. Poster gemt i skoven, gåder, kodeord og små udfordringer, som kun kan løses, hvis alle hjælper.</p>
+                        <ul class="tjek">
+                            <li>Pandelamper, kort og kompas – vi lærer at finde vej i mørket</li>
+                            <li>Poster med opgaver i samarbejde, mod og opfindsomhed</li>
+                            <li>Ruter i flere sværhedsgrader, så både børn og bedsteforældre kan være med</li>
+                            <li>Alle løber i hold, og en vært er altid i nærheden</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="detalje" id="luftgevaer">
+                    <div class="detalje__billede afsloer">
+                        <img src="/assets/img/arkiv/luftgevaer.jpg" alt="To deltagere sigter med luftgevær mod en dåse" loading="lazy">
+                        <figure class="polaroid tape"><img src="/assets/img/arkiv/kast.jpg" alt="En deltager kaster i en udendørs konkurrence" loading="lazy"><figcaption>turnering!</figcaption></figure>
+                    </div>
+                    <div class="afsloer" style="--forsink:.1s">
+                        <span class="detalje__nr">eventyr nr. 3</span>
+                        <h2>Luftgevær</h2>
+                        <p class="ingress">Det er overraskende meditativt: Rolig vejrtrækning, stille hænder og fuld koncentration. Og så er det vildt sjovt, når dåsen vælter.</p>
+                        <ul class="tjek">
+                            <li>Grundig sikkerhedsinstruktion, før nogen rører et gevær</li>
+                            <li>Afmærket skydebane med opsyn hele tiden</li>
+                            <li>Teknik: stilling, åndedræt og aftræk</li>
+                            <li>Afslutter med en lille turnering – med præmie til bedste og sjoveste skud</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="detalje" id="bow-combat">
+                    <div class="detalje__billede afsloer">
+                        <div class="illu-flade"><!-- @include "src/partials/bow-illu.html" --><span class="haand">billeder følger efter første kamp!</span></div>
+                    </div>
+                    <div class="afsloer" style="--forsink:.1s">
+                        <span class="detalje__nr">eventyr nr. 4</span>
+                        <h2>Bow combat</h2>
+                        <p class="ingress">Tænk paintball møder dodgeball – med bue og pile med bløde skumspidser. To hold, skjulesteder i krattet og et mål, der skal erobres.</p>
+                        <ul class="tjek">
+                            <li>Buer, skumpile og ansigtsmasker til alle</li>
+                            <li>Opvarmning og skydetræning, før kampen går i gang</li>
+                            <li>Forskellige spil: erobr flaget, sidste mand står og redningsmission</li>
+                            <li>Fart, strategi og grin – uden blå mærker</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="sektion sektion--pergament korn">
+            <div class="wrap">
+                <div class="hoved hoved--center afsloer">
+                    <p class="overtitel">Turformater</p>
+                    <h2>Hvor langt vil I ud?</h2>
+                    <p class="ingress" style="margin:0 auto">Alle ture skræddersys til jeres gruppe – fra vennebanden og familien til hele arbejdspladsen.</p>
                 </div>
-                <div class="row">
-                    <div class="col-md-4 ftco-animate">
-                        <div class="classes">
-                            <a href="/kontakt.html" class="classes-img mb-3" style="background-image: url(/assets/images/produkt-shelter.jpg);" aria-label="Shelter og rødvin"></a>
-                            <div class="text text-center">
-                                <h3><a href="/kontakt.html">Shelter og rødvin</a></h3>
-                                <p>Vi rejser en shelter af det, skoven giver, tænder bål og deler en flaske rødvin, når mørket falder på. Roligt, varmt og uden telefoner.</p>
-                            </div>
+                <div class="ture">
+                    <article class="tur afsloer">
+                        <div class="tur__billede"><img src="/assets/img/arkiv/kaempe-jenga.jpg" alt="Kæmpe-jenga i frugthaven" loading="lazy"><span class="tur__tid">ca. 4 timer</span></div>
+                        <div class="tur__tekst">
+                            <h3>Eftermiddagseventyr</h3>
+                            <p>Et eller to eventyr, bål og snobrød. Perfekt til fødselsdagen, teamdagen eller de første skridt i skoven.</p>
+                            <ul><li>Luftgevær eller bow combat</li><li>Bålmad og kaffe på kanden</li><li>Konkurrencer og leg</li></ul>
+                            <a class="link-pil" href="/hold.html#tilmelding">Spørg efter en dato →</a>
                         </div>
-                    </div>
-                    <div class="col-md-4 ftco-animate">
-                        <div class="classes">
-                            <a href="/kontakt.html" class="classes-img mb-3" style="background-image: url(/assets/images/produkt-hammock.jpg);" aria-label="Hængekøje og hjemmelavet øl"></a>
-                            <div class="text text-center">
-                                <h3><a href="/kontakt.html">Hængekøje og hjemmelavet øl</a></h3>
-                                <p>Vi brygger en simpel øl over bål, binder knob og opsætter hængekøjer mellem træerne. En tur for dem, der gerne vil slappe af med noget i hænderne.</p>
-                            </div>
+                    </article>
+                    <article class="tur afsloer" style="--forsink:.1s">
+                        <div class="tur__billede"><img src="/assets/img/arkiv/haengekoejelejr.jpg" alt="Hængekøjelejr mellem træerne" loading="lazy"><span class="tur__tid">kl. 16 – 10</span></div>
+                        <div class="tur__tekst">
+                            <h3>Nattetur</h3>
+                            <p>Klassikeren. Vi slår lejr, laver mad over ild, skyder, løber natteløb og sover i telthængekøjer.</p>
+                            <ul><li>Alle fire eventyr</li><li>Aftensmad og morgenmad over bål</li><li>Overnatning i telthængekøje</li></ul>
+                            <a class="link-pil" href="/hold.html#tilmelding">Book en nattetur →</a>
                         </div>
-                    </div>
-                    <div class="col-md-4 ftco-animate">
-                        <div class="classes">
-                            <a href="/kontakt.html" class="classes-img mb-3" style="background-image: url(/assets/images/produkt-okser.png);" aria-label="Økser, hulebyg, bål og mjød"></a>
-                            <div class="text text-center">
-                                <h3><a href="/kontakt.html">Økser, hulebyg, bål og mjød</a></h3>
-                                <p>Stenalder på fuld kraft: vi kaster med økse, bygger hule, tænder bål uden tændstikker og runder af med mjød i hornet.</p>
-                            </div>
+                    </article>
+                    <article class="tur afsloer" style="--forsink:.2s">
+                        <div class="tur__billede"><img src="/assets/img/arkiv/soe.jpg" alt="Sø omkranset af træer en sommerdag" loading="lazy"><span class="tur__tid">fre – søn</span></div>
+                        <div class="tur__tekst">
+                            <h3>Weekendekspedition</h3>
+                            <p>To nætter ude. Plads til at bygge noget sammen, svømme i søen og lære hinanden ordentligt at kende.</p>
+                            <ul><li>Alle eventyr – i dybden</li><li>Byggeprojekt eller tømmerflåde</li><li>Fælles langbord lørdag aften</li></ul>
+                            <a class="link-pil" href="/hold.html#tilmelding">Planlæg en weekend →</a>
                         </div>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-md-4 ftco-animate">
-                        <div class="classes">
-                            <div class="text text-center">
-                                <h3>Heldagstur</h3>
-                                <p>Frisk bad, bålrøg, klassisk musik og morgenmad. Dernæst arbejde og gravning indtil solen står lavt.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 ftco-animate">
-                        <div class="classes">
-                            <div class="text text-center">
-                                <h3>Nattetur</h3>
-                                <p>Stenaldermad, en tryg nattesøvn under åben himmel og natteløb, når det bliver mørkt.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 ftco-animate">
-                        <div class="classes">
-                            <div class="text text-center">
-                                <h3>Teambuilding</h3>
-                                <p>Opgaver, der kun kan løses sammen. Ingen tavler, ingen teori – bare værktøj, tid og hinanden.</p>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-<!-- @include "src/partials/section-program.html" -->
-<!-- @include "src/partials/section-priser.html" -->
-<!-- @include "src/partials/section-cta.html" -->
+        <section class="sektion">
+            <div class="wrap to-kol">
+                <div class="afsloer">
+                    <p class="overtitel">Sådan passer vi på hinanden</p>
+                    <h2>Vildt, men aldrig vilkårligt</h2>
+                    <p class="ingress">Eventyr skal føles lidt farligt – men være trygt. Derfor gør vi tingene ordentligt hver gang.</p>
+                    <ul class="tjek">
+                        <li>Instruktion før hver aktivitet, og værter med erfaring fra mange år i skoven</li>
+                        <li>Luftgevær kun på afmærket bane og altid under opsyn</li>
+                        <li>Masker og bløde pile til bow combat</li>
+                        <li>Førstehjælpskasse og plan for vejret – vi tilpasser programmet, ikke omvendt</li>
+                        <li>Vi efterlader skoven, som vi fandt den</li>
+                    </ul>
+                </div>
+                <div class="pakkeliste afsloer" style="--forsink:.1s">
+                    <h3>Pakkeliste</h3>
+                    <ul>
+                        <li>Sovepose</li>
+                        <li>Liggeunderlag</li>
+                        <li>Pandelampe</li>
+                        <li>Varmt lag til natten</li>
+                        <li>Regntøj</li>
+                        <li>Gode sko</li>
+                        <li>Krus &amp; drikkedunk</li>
+                        <li>Tandbørste</li>
+                        <li>Badetøj (!)</li>
+                        <li>Godt humør</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+<!-- @include "src/partials/cta.html" -->
 <!-- @include "src/partials/footer.html" -->
