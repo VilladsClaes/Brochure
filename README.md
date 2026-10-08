@@ -89,8 +89,9 @@ Det kræver tre repository secrets (Settings → Secrets and variables → Actio
 | `FTP_USERNAME` | FTP-brugernavn                                     |
 | `FTP_PASSWORD` | FTP-adgangskode                                    |
 
-Filerne lægges i `public_html/`. Hvis webroden hedder noget andet, så opret en
-repository-variabel `FTP_SERVER_DIR` (fx `wwwroot/`, med afsluttende `/`).
+Filerne lægges i mappen `foretagsomheden/` i roden af FTP-kontoen (webroden for
+foretagsomheden.dk). Bemærk: `public_html/` er webroden for villadsclaes.dk. Mappen
+kan ændres med repository-variablen `FTP_SERVER_DIR` (med afsluttende `/`).
 
 `public/web.config` sætter IIS op med `index.html` som startside og `404.html`
 som fejlside.
