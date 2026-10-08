@@ -1,11 +1,13 @@
-# Eventur
+# eventur
 
-Statisk brochureside for **Eventur – event og ture i naturen**.
+Statisk site for **eventur** – udflugt, eventyr, sammenhold, læring og fællesskab i
+naturen. Vi sover i telthængekøjer, løber natteløb, skyder med luftgevær og spiller
+bow combat. eventur er arvtageren efter foreningen Foretagsomheden og Skarresø
+Festival – Danmarks Byggefestival.
 
-Siden var oprindeligt et ASP.NET MVC 5-projekt (.NET Framework 4.8), der var
-halvt konverteret fra et Colorlib-skabelon. Det er nu genskrevet som et moderne,
-statisk site uden server-afhængigheder: al indhold ligger i HTML, bygget med
-[Vite](https://vite.dev) og hostes som rene filer.
+Sitet er bygget med [Vite](https://vite.dev) og hostes som rene filer. Der er ingen
+skabelon, ingen jQuery og ingen ikonfonte – alt design og al JavaScript er skrevet
+til projektet.
 
 ## Kom i gang
 
@@ -21,16 +23,16 @@ Kræver Node 18+ (testet med Node 24).
 ## Sådan er det bygget
 
 ```
-index.html, om.html, ture.html, …   Sider (indgange for Vite)
-blog/                               Blogoversigt + artikler
-src/
-  partials/                         Delte HTML-fragmenter (head, nav, footer, sektioner)
-public/
-  assets/                           Temaets CSS, JS, skrifter og billeder
-  favicon.ico
-tools/vite-plugin-html-includes.js  Lille plugin, der samler partials
-vite.config.js                      Flersidet (MPA) opsætning
-theme/                              Skabelonens oprindelige SCSS/Bootstrap-kilder (bruges ikke i build)
+index.html, ture.html, galleri.html, …   Sider (indgange for Vite)
+blog/                                    Blogoversigt + artikler
+src/partials/                            Delte HTML-fragmenter (head, header, footer, cta, …)
+public/assets/css/site.css               Hele designsystemet
+public/assets/js/main.js                 Menu, lysboks, galleri-filtre, formularer, afsløring
+public/assets/img/arkiv/                 Billeder fra Foretagsomhedens arkiv
+public/assets/img/folk/                  Portrætter af værter og gæster
+public/assets/video/                     Video til Historien-siden
+tools/vite-plugin-html-includes.js       Lille plugin, der samler partials
+vite.config.js                           Flersidet (MPA) opsætning
 ```
 
 ### Partials
@@ -39,35 +41,40 @@ Siderne gentager ikke header, footer eller sektioner. I stedet inkluderes
 fragmenter med en kommentar, og Vite udskifter dem ved build og i dev-serveren:
 
 ```html
-<!-- @include "src/partials/head.html" { "title": "Ture", "description": "…", "section": "ture" } -->
-<!-- @include "src/partials/nav.html" -->
+<!-- @include "src/partials/head.html" { "title": "Galleri", "description": "…", "section": "galleri" } -->
+<!-- @include "src/partials/header.html" -->
+<!-- @include "src/partials/page-hero.html" { "title": "…", "crumb": "…", "lead": "…", "image": "/assets/img/arkiv/…" } -->
 ```
 
-Variabler indsættes med `{{navn}}`, og inkluderinger kan nestes. Pluginnet ligger i
-`tools/vite-plugin-html-includes.js`.
+Variabler indsættes med `{{navn}}`, og inkluderinger kan nestes.
 
-### JavaScript og CSS
+### Design
 
-Klientscripts og -styles ligger under `public/assets` og indlæses uændret.
+Udtrykket er en ekspeditionsjournal: skovgrøn, bålglød og pergament, polaroids med
+håndskrevne noter – i samme ånd som de håndmalede skilte fra Skarresø. Farver,
+skrifter og afstande er tokens øverst i `site.css`. Skrifterne er Fraunces
+(overskrifter), Instrument Sans (brødtekst) og Caveat (håndskrift) fra Google Fonts.
 
-- `public/assets/js/main.js` håndterer menu, slider, popups, formularer og
-  indholdsafsløring (`IntersectionObserver`). Skrevet fra bunden.
-- `public/assets/css/site.css` er projektets egne tilføjelser oven på temaets
-  `style.css`.
-- Temaets ældre JavaScript (jQuery, Owl Carousel, Magnific Popup) er bevidst
-  beholdt for at bevare det visuelle udtryk. Det kan med fordel erstattes af
-  vanilla JS på et senere tidspunkt.
+- Elementer med klassen `afsloer` glider ind, når de kommer i viewport
+  (`--forsink` styrer forsinkelsen). Uden JavaScript eller med reduceret
+  bevægelse vises alt med det samme.
+- Links med `data-lysboks="gruppe"` åbner i lysboksen; `data-note` bliver billedtekst.
+  `data-video="/sti.mp4"` åbner en video.
+- Formularer med `data-mailto-form="adresse"` validerer og åbner brugerens mailklient.
 
-`main.js` afhænger kun af jQuery + de to plugins; det afslører indhold via
-`IntersectionObserver` med `no-js`-fallback, så siden også virker uden JavaScript.
+### Billeder
+
+Billederne stammer fra Foretagsomhedens Facebook-arkiv (Skarresø Festival) og er
+skaleret til maks. 1600 px. Bow combat har endnu ingen billeder – kortet bruger en
+illustration (`src/partials/bow-illu.html`), indtil de første kampe er fotograferet.
 
 ## Indhold
 
-Teksterne er skrevet på dansk og bygger på det oprindelige koncept (arbejdsfitness,
-shelterture, bål og mjød, de tre værter og prisniveauerne fra forsiden).
+Teksterne er skrevet på dansk og bygger på Foretagsomhedens historie og eventurs
+fire aktiviteter. Priser og værter er overført fra den tidligere side.
 
-Kontaktoplysninger (adresse, telefon, e-mail) er **pladsholdere** og skal erstattes
-med de rigtige inden en rigtig udgivelse.
+Kontaktoplysninger (adresse, telefon, e-mail) og links til sociale medier er
+**pladsholdere** og skal erstattes med de rigtige inden en rigtig udgivelse.
 
 ## Udgivelse
 

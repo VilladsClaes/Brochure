@@ -1,93 +1,225 @@
-<!-- @include "src/partials/head.html" { "title": "Event og ture i naturen", "description": "Eventur laver event og ture i naturen – arbejdsfitness, shelterture, bål og mjød. Med de mest basale midler søger vi de mest sublime oplevelser.", "section": "index" } -->
-<!-- @include "src/partials/nav.html" -->
+<!-- @include "src/partials/head.html" { "title": "Udflugt, eventyr og fællesskab i naturen", "description": "eventur tager jer ud at sove i telthængekøjer, løbe natteløb, skyde med luftgevær og spille bow combat. Udflugt, eventyr, sammenhold, læring og fællesskab – arvtageren efter Foretagsomheden.", "section": "index" } -->
+<!-- @include "src/partials/header.html" -->
 
-        <section class="home-slider owl-carousel">
-            <div class="slider-item" style="background-image: url('/assets/images/bg_1.jpg');">
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row slider-text align-items-center">
-                        <div class="col-md-7 col-sm-12 ftco-animate">
-                            <h1 class="mb-3">Oplev arbejdsfitness!</h1>
-                            <p><a href="/ture.html" class="btn btn-outline-white py-3 px-4">Se vores ture</a></p>
-                        </div>
+        <section class="hero">
+            <div class="hero__bg"><img src="/assets/img/arkiv/lejr-skumring.jpg" alt="Lejren i skovbrynet ved skumring, hvor bålets lys falder mellem granerne" fetchpriority="high"></div>
+            <div class="wrap hero__inner">
+                <div>
+                    <p class="overtitel">Udflugt · Eventyr · Fællesskab</p>
+                    <h1><span class="haand">I nat sover vi i træerne.</span>Kom med ud, hvor eventyret starter.</h1>
+                    <p class="ingress">Telthængekøjer mellem granerne, natteløb med pandelampe, luftgevær på skydebanen og bow combat i lysningen. Vi er eventur – og vi tager jer med ud.</p>
+                    <div class="knapper">
+                        <a class="knap" href="/hold.html#tilmelding">Book en tur <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                        <a class="knap knap--lys" href="#eventyr">Se hvad vi laver</a>
                     </div>
                 </div>
-            </div>
-            <div class="slider-item" style="background-image: url('/assets/images/bg_2.jpg');">
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row slider-text align-items-center">
-                        <div class="col-md-7 col-sm-12 ftco-animate">
-                            <h1 class="mb-3">Brug din krop med mening</h1>
-                            <p><a href="/hold.html" class="btn btn-outline-white py-3 px-4">Se hold &amp; priser</a></p>
-                        </div>
-                    </div>
+                <div class="hero__polaroids" aria-hidden="true">
+                    <figure class="polaroid tape"><img src="/assets/img/arkiv/haengekoejer-skov.jpg" alt=""><figcaption>hængekøjehotellet</figcaption></figure>
+                    <figure class="polaroid tape"><img src="/assets/img/arkiv/luftgevaer.jpg" alt=""><figcaption>sigt efter dåsen!</figcaption></figure>
+                    <figure class="polaroid tape"><img src="/assets/img/arkiv/gruppe-jubel.jpg" alt=""><figcaption>holdet ♥</figcaption></figure>
                 </div>
             </div>
-            <div class="slider-item" style="background-image: url('/assets/images/bg_3.jpg');">
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row slider-text align-items-center">
-                        <div class="col-md-7 col-sm-12 ftco-animate">
-                            <h1 class="mb-3">Indtag naturens hotel</h1>
-                            <p><a href="/vaerter.html" class="btn btn-outline-white py-3 px-4">Mød værterne</a></p>
-                        </div>
-                    </div>
+            <a class="rul-ned" href="#intro" aria-label="Rul ned"></a>
+            <div class="baand" aria-hidden="true">
+                <div class="baand__spor">
+                    <span>Telthængekøjer</span><span>Natteløb</span><span>Luftgevær</span><span>Bow combat</span><span>Bål &amp; gløder</span><span>Tømmerflåde</span><span>Morgenkaffe på termokanden</span><span>Stjernehimmel</span>
+                    <span>Telthængekøjer</span><span>Natteløb</span><span>Luftgevær</span><span>Bow combat</span><span>Bål &amp; gløder</span><span>Tømmerflåde</span><span>Morgenkaffe på termokanden</span><span>Stjernehimmel</span>
                 </div>
             </div>
-            <div class="slider-item" style="background-image: url('/assets/images/bg_4.jpg');">
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row slider-text align-items-center">
-                        <div class="col-md-7 col-sm-12 ftco-animate">
-                            <h1 class="mb-3">Lær rytmen i samarbejdet med hinanden</h1>
-                            <p><a href="/om.html" class="btn btn-outline-white py-3 px-4">Om Eventur</a></p>
-                        </div>
+        </section>
+
+        <section class="sektion" id="intro">
+            <div class="wrap intro">
+                <div class="intro__tekst afsloer">
+                    <p class="overtitel">Fra Foretagsomheden til eventur</p>
+                    <h2>Vi har bygget, hygget og sovet under åben himmel i over et årti.</h2>
+                    <p class="ingress">I foreningen Foretagsomheden holdt vi arbejdsfester og elleve somre med Skarresø Festival – Danmarks Byggefestival. Vi rejste tårne af paller, sov i hængekøjer, padlede på hjemmebyggede flåder og lærte hinanden at bruge værktøj, vi aldrig havde rørt.</p>
+                    <p>Foreningen er lukket, men ånden lever. I dag hedder vi <strong>eventur</strong>, og vi har pakket det bedste med: udflugten, eventyret, sammenholdet, læringen og fællesskabet. Kun med lidt færre paller og lidt flere natteløb.</p>
+                    <div class="fakta">
+                        <div><strong>11</strong><span>somre med Skarresø Festival</span></div>
+                        <div><strong>4</strong><span>eventyr på programmet i dag</span></div>
+                        <div><strong>1</strong><span>bål, vi samles om til sidst</span></div>
                     </div>
+                    <p class="mt-l"><a class="link-pil" href="/om.html">Læs hele historien →</a></p>
+                </div>
+                <div class="intro__billeder afsloer" style="--forsink:.15s">
+                    <figure><img src="/assets/img/arkiv/ankomst.jpg" alt="Deltagere med rygsække og liggeunderlag ankommer til lejren" loading="lazy"></figure>
+                    <figure><img src="/assets/img/arkiv/toemmerflaade.jpg" alt="Tre deltagere padler på en hjemmebygget tømmerflåde på søen" loading="lazy"></figure>
+                    <svg class="stempel" viewBox="0 0 200 200" aria-hidden="true">
+                        <defs><path id="cirkel" d="M100 100m-74 0a74 74 0 1 1 148 0a74 74 0 1 1-148 0"/></defs>
+                        <circle cx="100" cy="100" r="98" fill="#e0602a"/>
+                        <text fill="#fbf7ee" font-family="Instrument Sans, sans-serif" font-weight="700" font-size="17" letter-spacing="5"><textPath href="#cirkel">UDFLUGT · EVENTYR · SAMMENHOLD · LÆRING ·</textPath></text>
+                        <g transform="translate(70 70) scale(1.5)"><path d="M9 31V12M31 31V12" stroke="#fbf7ee" stroke-width="2.6" stroke-linecap="round"/><path d="M9 16l11-6 11 6" fill="none" stroke="#fbf7ee" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><path d="M9 19c4 7 18 7 22 0" fill="none" stroke="#fbf7ee" stroke-width="2.6" stroke-linecap="round"/></g>
+                    </svg>
                 </div>
             </div>
-            <div class="slider-item" style="background-image: url('/assets/images/bg_5.jpg');">
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row slider-text align-items-center">
-                        <div class="col-md-7 col-sm-12 ftco-animate">
-                            <h1 class="mb-3">Se dum ud, mens du laver noget meningsløst</h1>
-                            <p><a href="/kontakt.html" class="btn btn-outline-white py-3 px-4">Book en tur</a></p>
+        </section>
+
+        <section class="sektion sektion--pergament korn" id="eventyr">
+            <div class="wrap">
+                <div class="hoved afsloer">
+                    <p class="overtitel">Det skal vi</p>
+                    <h2>Fire eventyr. <span class="glod">Én lang, lys nat.</span></h2>
+                    <p class="ingress">Hvert eventyr kan stå alene på en eftermiddag – eller flettes sammen til et døgn, hvor I går fra hængekøjen til skydebanen til natteløbet og hjem igen med røg i håret.</p>
+                </div>
+                <div class="aktiviteter">
+                    <a class="akt afsloer" href="/ture.html#haengekoejer">
+                        <img src="/assets/img/arkiv/haengekoejer-skov.jpg" alt="Telthængekøjer spændt op mellem høje graner" loading="lazy">
+                        <span class="akt__maerke">sov i træerne</span>
+                        <div class="akt__tekst">
+                            <span class="akt__nr">nr. 1</span>
+                            <h3>Telthængekøjer</h3>
+                            <p>Vi spænder hængekøjer med myggenet og tarp op mellem træerne og sover svævende over skovbunden. Lær knobene, find de rigtige træer – og vågn til fuglesang.</p>
                         </div>
+                    </a>
+                    <a class="akt afsloer" href="/ture.html#natteloeb" style="--forsink:.1s">
+                        <img src="/assets/img/arkiv/nat-taarn.jpg" alt="Udkigstårn i silhuet mod den blå nattehimmel" loading="lazy">
+                        <div class="akt__tekst">
+                            <span class="akt__nr">nr. 2</span>
+                            <h3>Natteløb</h3>
+                            <p>Når mørket falder, går posterne i gang. Pandelamper, kort, kodeord og opgaver, der kun kan løses sammen.</p>
+                        </div>
+                    </a>
+                    <a class="akt afsloer" href="/ture.html#luftgevaer">
+                        <img src="/assets/img/arkiv/luftgevaer.jpg" alt="To deltagere sigter med luftgeværer mod en dåse" loading="lazy">
+                        <div class="akt__tekst">
+                            <span class="akt__nr">nr. 3</span>
+                            <h3>Luftgevær</h3>
+                            <p>Ro på vejrtrækningen, øjet i kikkerten – og så dåsen. Instruktion, sikkerhed og en lille turnering til sidst.</p>
+                        </div>
+                    </a>
+                    <a class="akt akt--illu afsloer" href="/ture.html#bow-combat" style="--forsink:.1s">
+                        <div class="akt__illu"><!-- @include "src/partials/bow-illu.html" --></div>
+                        <span class="akt__maerke">nyt!</span>
+                        <div class="akt__tekst">
+                            <span class="akt__nr">nr. 4</span>
+                            <h3>Bow combat</h3>
+                            <p>Paintball møder dodgeball – med bue og skumpile. To hold, skjul i krattet og fuld fart. Ingen blå mærker, kun røde kinder.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sektion">
+            <div class="wrap">
+                <div class="hoved hoved--center afsloer">
+                    <p class="overtitel">Det går vi op i</p>
+                    <h2>Fem ord, vi har taget med fra Skarresø</h2>
+                </div>
+                <div class="vaerdier">
+                    <article class="vaerdi afsloer" tabindex="0">
+                        <img src="/assets/img/arkiv/bussen.jpg" alt="Deltagere vinker farvel til bussen ved festivalen" loading="lazy">
+                        <span class="vaerdi__nr">01</span>
+                        <div class="vaerdi__tekst"><h3>Udflugt</h3><p>Vi pakker rygsækken og tager afsted. Væk fra skærme og kalendere – ud, hvor vejret bestemmer.</p></div>
+                    </article>
+                    <article class="vaerdi afsloer" tabindex="0" style="--forsink:.08s">
+                        <img src="/assets/img/arkiv/udsigt-top.jpg" alt="En smilende deltager sidder øverst på en hjemmebygget konstruktion" loading="lazy">
+                        <span class="vaerdi__nr">02</span>
+                        <div class="vaerdi__tekst"><h3>Eventyr</h3><p>Lidt højere, lidt mørkere, lidt vådere end man havde regnet med. Det er dér, historierne opstår.</p></div>
+                    </article>
+                    <article class="vaerdi afsloer" tabindex="0" style="--forsink:.16s">
+                        <img src="/assets/img/arkiv/rejsegilde.jpg" alt="En gruppe rejser i fællesskab en tømmerkonstruktion i skoven" loading="lazy">
+                        <span class="vaerdi__nr">03</span>
+                        <div class="vaerdi__tekst"><h3>Sammenhold</h3><p>Opgaverne er bygget, så de kun kan løses sammen. Man løfter i flok – også når det gælder humøret.</p></div>
+                    </article>
+                    <article class="vaerdi afsloer" tabindex="0" style="--forsink:.24s">
+                        <img src="/assets/img/arkiv/knob.jpg" alt="To deltagere lærer at binde knob på et reb" loading="lazy">
+                        <span class="vaerdi__nr">04</span>
+                        <div class="vaerdi__tekst"><h3>Læring</h3><p>Knob, økse, ildstål og kort. Alle kan lære noget – og alle har noget at lære fra sig.</p></div>
+                    </article>
+                    <article class="vaerdi afsloer" tabindex="0" style="--forsink:.32s">
+                        <img src="/assets/img/arkiv/langbord.jpg" alt="Mange mennesker samlet om et langbord under et æbletræ" loading="lazy">
+                        <span class="vaerdi__nr">05</span>
+                        <div class="vaerdi__tekst"><h3>Fællesskab</h3><p>Langbord under æbletræet, gryden over bålet og samtaler, der fortsætter langt efter gløderne.</p></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="sektion sektion--nat korn">
+            <div class="wrap">
+                <div class="hoved hoved--center afsloer">
+                    <p class="overtitel">Et døgn med eventur</p>
+                    <h2>Fra hængekøje til morgenkaffe</h2>
+                    <p class="ingress" style="margin:0 auto">Sådan kan jeres døgn se ud. Vi skruer op og ned for tempoet, så det passer til jer.</p>
+                </div>
+                <div class="doegn">
+                    <div class="post afsloer">
+                        <div class="post__billede"><img src="/assets/img/arkiv/baere-solnedgang.jpg" alt="To deltagere bærer udstyr gennem lyngen i aftensolen" loading="lazy"></div>
+                        <div><span class="post__tid">kl. 16.00</span><h3>Vi slår lejr</h3><p>Ankomst, kaffe og en tur gennem skoven. Vi finder de rigtige træer, binder knob og spænder telthængekøjerne op.</p></div>
+                    </div>
+                    <div class="post afsloer">
+                        <div class="post__billede"><img src="/assets/img/arkiv/gryde-baal.jpg" alt="En stor gryde hænger over bålet i lejren" loading="lazy"></div>
+                        <div><span class="post__tid">kl. 18.30</span><h3>Gryden over bålet</h3><p>Alle hjælper til. Brænde skal hugges, grøntsager snittes og ilden holdes ved lige – maden smager af røg og stolthed.</p></div>
+                    </div>
+                    <div class="post afsloer">
+                        <div class="post__billede"><img src="/assets/img/arkiv/luftgevaer.jpg" alt="Deltagere sigter med luftgevær" loading="lazy"></div>
+                        <div><span class="post__tid">kl. 20.00</span><h3>Luftgevær &amp; bow combat</h3><p>Skydebanen åbner i aftenlyset, og bagefter deler vi os i hold til bow combat i lysningen.</p></div>
+                    </div>
+                    <div class="post afsloer">
+                        <div class="post__billede"><img src="/assets/img/arkiv/nat-lanterner.jpg" alt="Lysende lanterner i mørket ved Skarresø-skiltet" loading="lazy"></div>
+                        <div><span class="post__tid">kl. 22.30</span><h3>Natteløbet</h3><p>Pandelamperne tændes. Poster i mørket, kodeord, gåder – og et fælles mål ved bålet.</p></div>
+                    </div>
+                    <div class="post afsloer">
+                        <div class="post__billede"><img src="/assets/img/arkiv/morgenkaffe.jpg" alt="Termokande og krus i morgenlyset over skoven" loading="lazy"></div>
+                        <div><span class="post__tid">kl. 07.30</span><h3>Morgenkaffe i dug</h3><p>Man vågner svævende mellem træerne. Kaffen står klar på termokanden, og dagen kan begynde med et morgendyp.</p></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="ftco-section about-section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-9 text-center">
-                        <div class="ftco-animate">
-                            <h2><strong>Eventur</strong> – med de mest basale midler søger vi de mest sublime oplevelser</h2>
-                            <p class="mt-3">13 års erfaring med udfordrende aktiviteter for grupper, hold og familier i den danske natur.</p>
-                        </div>
-                        <div class="play-video d-flex justify-content-center mt-5 ftco-animate">
-                            <a href="#video-popup" class="icon popup-inline d-flex align-items-center justify-content-center" aria-label="Afspil video"><span class="icon-play"></span></a>
-                        </div>
-                    </div>
+        <section class="sektion sektion--pergament korn">
+            <div class="wrap">
+                <div class="hoved afsloer">
+                    <p class="overtitel">Hvad siger folk?</p>
+                    <h2>Historier fra dem, der var med</h2>
+                </div>
+                <div class="citater">
+                    <figure class="citat citat--stor afsloer">
+                        <blockquote>Jeg lærte at skære glas af én, der var uddannet i alt muligt – og til gengæld lærte jeg fra mig. Jeg sov i telt, men man kunne også sove i hængekøjer. Personligt har jeg fået et helt nyt syn på folk, fordi de kan så mange ting, som jeg synes er seje.</blockquote>
+                        <figcaption><span class="initial" aria-hidden="true">E</span><div><strong>Elise</strong><span>cyklede til Skarresø Festival i 2016</span></div></figcaption>
+                    </figure>
+                    <figure class="citat afsloer" style="--forsink:.1s">
+                        <blockquote>Nogen skrev til mig på couchsurfing, og det var derfor, jeg kom her. Det er den bedste måde at bruge sin tid på.</blockquote>
+                        <figcaption><img src="/assets/img/folk/udtalelse-filip.jpg" alt="" loading="lazy"><div><strong>Filip Revez</strong><span>læge</span></div></figcaption>
+                    </figure>
+                    <figure class="citat afsloer" style="--forsink:.15s">
+                        <blockquote>De her drenge har lært os utroligt meget om natur og værktøj. Vi var ikke sikre på, at vi kunne – men nu kan vi.</blockquote>
+                        <figcaption><img src="/assets/img/folk/udtalelse-gitte-johanne.jpg" alt="" loading="lazy"><div><strong>Johanne &amp; Gitte</strong><span>med på holdet</span></div></figcaption>
+                    </figure>
+                    <figure class="citat afsloer" style="--forsink:.2s">
+                        <blockquote>Før var jeg tit træt, men så prøvede jeg det her – og nu er jeg glad for sauna, stjernekiggeri og skovhugning.</blockquote>
+                        <figcaption><img src="/assets/img/folk/udtalelse-villads.jpg" alt="" loading="lazy"><div><strong>Villads</strong><span>gæst og senere vært</span></div></figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
 
-        <div id="video-popup" class="mfp-hide" style="max-width:900px;margin:0 auto;">
-            <video controls preload="metadata" style="width:100%;display:block;background:#000;">
-                <source src="/assets/images/video.mp4" type="video/mp4">
-                Din browser understøtter ikke videoafspilning.
-            </video>
-        </div>
+        <section class="sektion">
+            <div class="wrap">
+                <div class="hoved afsloer" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px;max-width:none">
+                    <div style="max-width:40rem">
+                        <p class="overtitel">Fra arkivet</p>
+                        <h2>Elleve somre i billeder</h2>
+                        <p class="ingress">Et lille udpluk fra Foretagsomhedens fotokasse. Klik for at se dem i stort format.</p>
+                    </div>
+                    <a class="link-pil" href="/galleri.html">Se hele galleriet →</a>
+                </div>
+                <div class="galleri afsloer">
+                    <a href="/assets/img/arkiv/haengekoejehotel.jpg" data-lysboks="forside" data-note="Hængekøjehotellet"><img src="/assets/img/arkiv/haengekoejehotel.jpg" alt="Plakat for hængekøjehotellet med hængekøjer under tarps" loading="lazy"></a>
+                    <a href="/assets/img/arkiv/spa-badekar.jpg" data-lysboks="forside" data-note="Spa for to – i skoven"><img src="/assets/img/arkiv/spa-badekar.jpg" alt="To badekar med varmt vand i skoven, gæsterne vinker" loading="lazy"></a>
+                    <a href="/assets/img/arkiv/morgengymnastik.jpg" data-lysboks="forside" data-note="Morgengymnastik i frugthaven"><img src="/assets/img/arkiv/morgengymnastik.jpg" alt="En gruppe strækker armene mod himlen i frugthaven" loading="lazy"></a>
+                    <a href="/assets/img/arkiv/byggeland-port.jpg" data-lysboks="forside" data-note="Velkommen til Byggeland"><img src="/assets/img/arkiv/byggeland-port.jpg" alt="Hjemmelavet port med teksten Byggeland over en skovvej" loading="lazy"></a>
+                    <a href="/assets/img/arkiv/fortaelling.jpg" data-lysboks="forside" data-note="Børnene lytter med"><img src="/assets/img/arkiv/fortaelling.jpg" alt="Børn og voksne sidder og lytter til en fortælling" loading="lazy"></a>
+                    <a href="/assets/img/arkiv/tagspaer.jpg" data-lysboks="forside" data-note="Spærene skal op"><img src="/assets/img/arkiv/tagspaer.jpg" alt="En deltager skruer tagspær sammen" loading="lazy"></a>
+                    <a href="/assets/img/arkiv/nat-baal.jpg" data-lysboks="forside" data-note="Bålet brænder ud over skoven"><img src="/assets/img/arkiv/nat-baal.jpg" alt="Bål lyser op i trætoppene om natten" loading="lazy"></a>
+                    <a href="/assets/img/arkiv/reden.jpg" data-lysboks="forside" data-note="Kæmperede af grene og halm"><img src="/assets/img/arkiv/reden.jpg" alt="Deltagere slapper af i en stor rede bygget af grene og halm" loading="lazy"></a>
+                    <a href="/assets/img/arkiv/skilt-haandvaerk.jpg" data-lysboks="forside" data-note="Håndværk er fedt"><img src="/assets/img/arkiv/skilt-haandvaerk.jpg" alt="Håndmalet skilt i skoven: Håndværk er fedt" loading="lazy"></a>
+                    <a href="/assets/img/arkiv/familie.jpg" data-lysboks="forside" data-note="Alle aldre er med"><img src="/assets/img/arkiv/familie.jpg" alt="En smilende kvinde med en baby på armen i lejren" loading="lazy"></a>
+                </div>
+            </div>
+        </section>
 
-<!-- @include "src/partials/section-services.html" -->
-<!-- @include "src/partials/section-ture.html" -->
-<!-- @include "src/partials/section-personale.html" -->
-<!-- @include "src/partials/section-udtalelser.html" -->
-<!-- @include "src/partials/section-priser.html" -->
-<!-- @include "src/partials/section-program.html" -->
-<!-- @include "src/partials/section-galleri.html" -->
-<!-- @include "src/partials/section-cta.html" -->
+<!-- @include "src/partials/cta.html" -->
 <!-- @include "src/partials/footer.html" -->

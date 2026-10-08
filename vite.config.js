@@ -16,6 +16,7 @@ export default defineConfig({
         ture: page('ture.html'),
         vaerter: page('vaerter.html'),
         hold: page('hold.html'),
+        galleri: page('galleri.html'),
         blog: page('blog/index.html'),
         'blog-shelter': page('blog/shelter-og-roedvin.html'),
         'blog-baal': page('blog/baal-og-mjoed.html'),
