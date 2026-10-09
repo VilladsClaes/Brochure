@@ -73,8 +73,8 @@ illustration (`src/partials/bow-illu.html`), indtil de første kampe er fotograf
 Teksterne er skrevet på dansk og bygger på Foretagsomhedens historie og eventurs
 fire aktiviteter. Priser og værter er overført fra den tidligere side.
 
-Kontaktoplysninger (adresse, telefon, e-mail) og links til sociale medier er
-**pladsholdere** og skal erstattes med de rigtige inden en rigtig udgivelse.
+Kontakt: info@foretagsomheden.dk og +45 60 61 43 09. Links til Instagram og
+Facebook i footeren er stadig **pladsholdere**.
 
 ## Udgivelse
 
